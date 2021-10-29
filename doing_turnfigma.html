@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+  <title>Biscay-Sketch转Figma</title>
+  <link rel="Shortcut Icon" href="img/favicon.ico" type="image/x-icon" />
+  <script src="js/jquery-3.3.1.slim.min.js"></script>
+  <script src="js/vue.min.js"></script>
+  <!-- element样式 -->
+  <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+  <!-- 组件公共样式 -->
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/doing_turnfigma.css">
+</head>
+
+<body ondragstart="return false">
+  <!-- 回到顶部 -->
+  <div id="topBtnPC">
+    <topbtn-box></topbtn-box>
+  </div>
+  <!-- 顶部导航 -->
+  <div id="headerPC">
+    <header-box></header-box>
+  </div>
+  <!-- 顶部banner -->
+  <div class="banner-Box">
+    <div class="bannerCnt">
+      <div class="leftGroup">
+        <img src="upload/doing_turnfigma/stf-icon.svg" alt="" class="stf-icon">
+        <h2 class="leftTitle">起初</h2>
+        <p class="text">18年从 Photoshop 过渡到 Sketch 做 UI设计，让我有一种从原始社会过度到现代社会的感觉，那种生产力提升的体验简直就是降维打击。</p>
+        <p class="text">可到了2020年 Sketch 要被 Figma 降维打击了，根据 UXTOOLS 的数据，Figma 已经是目前使用排名前五的设计工具了。与 Sketch 等传统工具不同的是，Figma
+          是第一款真正支持协作的 UI 设计软件，可以让整个团队的成员同时查看并修改协作的项目。而今年疫情居家办公也使得 Figma 的周边生态正在飞速搭建。</p>
+      </div>
+      <div class="rightIMG">
+        <img src="upload/doing_turnfigma/01.png" alt="" class="bannerIMG">
+      </div>
+    </div>
+  </div>
+  <!-- 主内容 -->
+  <div class="main-Box">
+    <div class="mainCnt">
+      <h2 class="firstTitle">▍Figma 的 Frame 概念</h2>
+      <p class="text">
+        Frame 可以理解为画板，字面意思是框架；这在 Sketch 里从来没有的概念，而且和 Sketch 的画板也不是一个东西，在现在新兴的设计软件：Framer X、Figma 中是都有
+        Frame 概念的；<br />
+        •　这个 Frame 是可以被嵌套的：<br />
+        •　Frame 套 Frame<br />
+        •　Frame 变成组件（Component）<br />
+        •　元素拖入 Frame 里时，图层关系会被自动归属于 Frame 下，可以理解为 自动编组，但比这个强大的多
+      </p>
+      <h2 class="secondTitle">自动编组的特性：</h2>
+      <p class="text">
+        在正确理解 Frame 概念之后，他的自动编组也会迫使我对图层逻辑保持清晰，本来做 UI 就需要对开发的逻辑、对自己图层的逻辑有清晰结构，所以在设计过程中应该保持自己的图层结构清晰，这时搭配 Frame
+        真的是美滋滋（话说图层结构清晰也是 UI 设计师的自我修养不是么？）
+      </p>
+      <h2 class="secondTitle">约束对齐布局：</h2>
+      <p class="text">
+        Sketch 中都有一个左对齐右对齐的布局设置，Figma 当然也有，但这个功能只能在 Frame 框架内使用，也就是说如果 2 个形状编组之后是不能设置布局；这一点其实挺好的，又一次督促我使用 Frame
+        来理清项目的图层逻辑，仔细想想，图层和框架本来就是 2 个概念。<br />
+        基于以上 2 点，善于用 Frame 的概念去做 UI，有一种神清气爽的感觉，认真想一些，其实在 Sketch 里的图层是随便怼的，乱糟糟，图层、编组之间的感觉一种非常混乱的感觉，而 Figma 就是清晰准确的感觉。
+      </p>
+      <img src="upload/doing_turnfigma/02.gif" alt="">
+      <h2 class="firstTitle">▍布局</h2>
+      <p class="text">
+        Figma 的布局是比 Sketch 更高级、更好用的：<br />
+        •　除了基本的上下左右<br />
+        •　Figma 还有 Center 居中对齐<br />
+        •　Figma 还有 Scale 比例缩放<br />
+      </p>
+      <img src="upload/doing_turnfigma/03.gif" alt="">
+      <h2 class="firstTitle">▍组件库和设计稿分离</h2>
+      <p class="text">
+        Figma 有团队功能，可以推送共用的组件库，可以理解为 Sketch 的 Library，但 Figma 的更稳定快速，说实话 Sketch 的 Library 我确实没研究过，但是
+        Figma的这个让我觉得非常好用，真正做到组件库单独更新，然后推送给同事
+      </p>
+      <h2 class="firstTitle">▍方便实用的历史版本控制</h2>
+      <p class="text">
+        当设计完一个版本的时候可以保存一个版本，而且设计的时候，figma会自动保存，在保存的大版本的位置下拉还有更多的时间点的小版本，可以把需要的时间点版本复制出来，相对于sketch的本地保存，figma的云端保存就方便很多了，不会因为硬件的损坏而丢失，永远可以存在网上。
+      </p>
+      <img src="upload/doing_turnfigma/04.png" alt="">
+      <h2 class="firstTitle">▍丰富的插件环境</h2>
+      <p class="text">
+        Figma有很多的插件，可以看到figma的插件排行，还可以查看最新上线的Figma插件，因为figma是基于网页端的设计，所以它不像sketch经常要更新版本，所以下载插件后就可以开开心心的使用，而且不用担心版本更新后插件不能使用的问题。
+      </p>
+      <img src="upload/doing_turnfigma/05.png" alt="">
+      <h2 class="firstTitle">▍设计稿标注</h2>
+      <p class="text">
+        Figma可以直接生成代码，可以生成css、安卓、ios三种代码，还可以切换展示形式，只要把链接发给开发，开发就可以直接使用了，开发还可以通过发出去的链接来进行切图，只要选中图标就可以导出各种开发所需要的格式，从此跟蓝湖摩客说byebye~
+      </p>
+      <img src="upload/doing_turnfigma/06.png" alt="">
+      <h2 class="firstTitle">▍云同步</h2>
+      <p class="text">
+        Figma可以在云端保存，之前用sketch的时候，每次回家都得把文件从公司电脑复制到自己的Macbook上，带到家里，第二天又得从笔记本上拷贝到公司的电脑上，特别麻烦。有了Figma，所有的设计稿都可以在云端保存、存储，就不用把文件传来传去了。~
+      </p>
+      <h2 class="firstTitle">▍秒杀Sketch的组件功能</h2>
+      <p class="text">
+        从组建的嵌套来看，Figma中的component复制后产生新的Instances，比symbol强大的地方在于，存在母子级的关系。相当于可以调整一个实例样式，但又不会干扰到母组件的样式，而修改母组建的样式又能修改全局。（已修改样式的子组件，该样式不受母组件干扰）
+      </p>
+      <img src="upload/doing_turnfigma/07.png" alt="">
+      <p class="text">
+        另外比较好用的一点就是figma生成的组件可以和用该组件的设计稿在同一个页面，修改了组件后，设计稿同时可以看到，不像sketch，修改了组件之后要跳转页面才能看到（sketch修改组件需要进入单独的组件页面）
+      </p>
+      <img src="upload/doing_turnfigma/08.png" alt="">
+      <p class="text">
+        还有比较好用的一点就是figma生成的组件，可以在左侧直接展示，只要直接拖动就可以了，如果是相同一级的子组件，还可以直接拖动替换。
+      </p>
+      <img src="upload/doing_turnfigma/09.png" alt="">
+      <h2 class="firstTitle">▍总结</h2>
+      <p class="text">
+        一场突如其来的疫情极大改变了人们生活和工作的方式，许多公司开始尝试远程办公，远程协作成为了摆在台面上的刚性需求。相信随着5G的到来，类似Figma这种云端编辑和设计将成为主流。<br />
+        目前我也是一边用一边学习这个软件，软件是一个工具，我们的目的是通过这个这个功能实现更加轻松高效的设计。
+      </p>
+      <span class="ending">
+        参考文章：<br />
+        来自知乎「如何评价多人合作界面设计工具 Figma？」<br />
+        来自人人都是产品经理「因远程协作大火的Figma，会取代Sketch的地位吗？」
+      </span>
+    </div>
+  </div>
+  <!-- 底部栏 -->
+  <div id="footerPC">
+    <footer-box></footer-box>
+  </div>
+  <!-- element组件 -->
+  <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+  <!-- 组件js -->
+  <script src="js/common.js"></script>
+</body>
+
+</html>

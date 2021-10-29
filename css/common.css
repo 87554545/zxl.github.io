@@ -1,0 +1,297 @@
+@charset "utf-8";
+/* CSS Document */
+/* CSS Document */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+body {
+  background-color: #fff;
+  margin: 0 auto;
+}
+a {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  display: block;
+  color: #333;
+}
+div,
+span,
+a,
+canvas,
+div,
+h1,
+h2,
+html,
+li,
+ol,
+p,
+span,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr,
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style-type: none;
+}
+img {
+  display: block;
+}
+a:active {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+input {
+  outline: none;
+  border: 0;
+  -webkit-appearance: none;
+  background-color: transparent;
+}
+button {
+  border: none;
+  outline: none;
+}
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url('../font/Montserrat-Regular.otf');
+}
+.ovfHiden {
+  overflow: hidden;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+#headerPC {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+.navBar-Box {
+  width: 100%;
+  height: 50px;
+  background-color: #101010;
+}
+.navBar-Box .navBarCnt {
+  width: 1200px;
+  height: 50px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navBar-Box .navBarCnt .left-Box {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navBar-Box .navBarCnt .left-Box .logo {
+  width: 99px;
+  height: auto;
+}
+.navBar-Box .navBarCnt .right-Box {
+  display: flex;
+}
+.navBar-Box .navBarCnt .right-Box a {
+  font-size: 14px;
+  color: #999999;
+  line-height: 14px;
+  margin: 0 40px;
+}
+.navBar-Box .navBarCnt .right-Box .current {
+  color: #F5F5F7;
+}
+.bottomBar-Box {
+  width: 100%;
+  height: 380px;
+  background-color: #101010;
+}
+.bottomBar-Box .bottomBarCnt {
+  width: 1200px;
+  height: 380px;
+  margin: 0 auto;
+  padding-top: 90px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.bottomBar-Box .bottomBarCnt .bottomBarLeft {
+  display: flex;
+  flex-direction: column;
+}
+.bottomBar-Box .bottomBarCnt .bottomBarLeft .text1 {
+  font-size: 48px;
+  font-weight: 600;
+  color: #F5F5F7;
+  line-height: 48px;
+  margin-bottom: 20px;
+}
+.bottomBar-Box .bottomBarCnt .bottomBarLeft .text2 {
+  width: 337px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #b8b8b8;
+  line-height: 25px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+.bottomBar-Box .bottomBarCnt .bottomBarLeft .text3 {
+  font-size: 15px;
+  font-weight: 400;
+  color: #b8b8b8;
+  line-height: 15px;
+  display: flex;
+  letter-spacing: 1px;
+}
+.bottomBar-Box .bottomBarCnt .bottomBarLeft .text3 a {
+  color: #36BC77;
+}
+.bottomBar-Box .bottomBarCnt .bottomBarRight {
+  display: flex;
+}
+.bottomBar-Box .bottomBarCnt .bottomBarRight .telGroup {
+  display: flex;
+  flex-direction: column;
+  margin-right: 200px;
+}
+.bottomBar-Box .bottomBarCnt .bottomBarRight .telGroup .telGroupTitle {
+  font-size: 16px;
+  font-weight: bold;
+  color: #F5F5F7;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 37px;
+}
+.bottomBar-Box .bottomBarCnt .bottomBarRight .telGroup .telGroupTitle .tel-icon {
+  width: 22px;
+  margin-left: 6px;
+}
+.bottomBar-Box .bottomBarCnt .bottomBarRight .telGroup .tel {
+  font-family: 'Montserrat-Regular';
+  font-size: 15px;
+  font-weight: 400;
+  color: #b8b8b8;
+  line-height: 19px;
+  margin-bottom: 32px;
+  letter-spacing: 0.5px;
+}
+.bottomBar-Box .bottomBarCnt .bottomBarRight .telGroup .email {
+  font-family: 'Montserrat-Regular';
+  font-size: 15px;
+  font-weight: 400;
+  color: #b8b8b8;
+  line-height: 19px;
+  text-decoration: underline;
+  letter-spacing: 0.5px;
+}
+.bottomBar-Box .bottomBarCnt .bottomBarRight .otherGroup {
+  display: flex;
+  flex-direction: column;
+}
+.bottomBar-Box .bottomBarCnt .bottomBarRight .otherGroup .otherGroupTitle {
+  font-size: 16px;
+  font-weight: bold;
+  color: #F5F5F7;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 37px;
+}
+.bottomBar-Box .bottomBarCnt .bottomBarRight .otherGroup .wx {
+  font-size: 15px;
+  font-weight: 400;
+  color: #b8b8b8;
+  line-height: 19px;
+  margin-bottom: 32px;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s;
+}
+.bottomBar-Box .bottomBarCnt .bottomBarRight .otherGroup .wx .wxCode {
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+  position: absolute;
+  left: 50px;
+  top: 0;
+  opacity: 0;
+  transition: all 0.3s;
+  transform: scale(0);
+  transform-origin: 0 0 0;
+}
+.bottomBar-Box .bottomBarCnt .bottomBarRight .otherGroup .wx:hover {
+  color: #F5F5F7;
+}
+.bottomBar-Box .bottomBarCnt .bottomBarRight .otherGroup .wx:hover .wxCode {
+  opacity: 100%;
+  transform: scale(1);
+}
+.bottomBar-Box .bottomBarCnt .bottomBarRight .otherGroup .mm {
+  font-size: 15px;
+  font-weight: 400;
+  color: #b8b8b8;
+  line-height: 19px;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s;
+}
+.bottomBar-Box .bottomBarCnt .bottomBarRight .otherGroup .mm .mmCode {
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+  position: absolute;
+  left: 50px;
+  top: 0;
+  transition: all 0.3s;
+  transform: scale(0);
+  transform-origin: 0 0 0;
+}
+.bottomBar-Box .bottomBarCnt .bottomBarRight .otherGroup .mm:hover {
+  color: #F5F5F7;
+}
+.bottomBar-Box .bottomBarCnt .bottomBarRight .otherGroup .mm:hover .mmCode {
+  opacity: 100%;
+  transform: scale(1);
+}
+.bottomBar-Box .bottomBarCnt .copyright {
+  font-size: 14px;
+  font-weight: 400;
+  color: #515151;
+  line-height: 14px;
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+}
+.topBtn-Box {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: #EFEFEF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 4;
+  bottom: 80px;
+  right: 90px;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.topBtn-Box .Top-icon {
+  width: 24px;
+  height: 24px;
+}

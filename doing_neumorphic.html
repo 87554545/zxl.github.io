@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+  <title>Biscay-新拟态风格设计</title>
+  <link rel="Shortcut Icon" href="img/favicon.ico" type="image/x-icon" />
+  <script src="js/jquery-3.3.1.slim.min.js"></script>
+  <script src="js/vue.min.js"></script>
+  <!-- element样式 -->
+  <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+  <!-- 组件公共样式 -->
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/doing_neumorphic.css">
+</head>
+
+<body ondragstart="return false">
+  <!-- 回到顶部 -->
+  <div id="topBtnPC">
+    <topbtn-box></topbtn-box>
+  </div>
+  <!-- 顶部导航 -->
+  <div id="headerPC">
+    <header-box></header-box>
+  </div>
+  <div class="main-Box" id="app">
+    <img src="upload/doing_neumorphic/01.jpg" alt="" class="cover">
+    <div class="mainCnt">
+      <el-image style="display:block" v-for="url in urls" :key="url" :src="url" lazy>
+      </el-image>
+    </div>
+  </div>
+  <!-- 底部栏 -->
+  <div id="footerPC">
+    <footer-box></footer-box>
+  </div>
+  <!-- element组件 -->
+  <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+  <!-- 组件js -->
+  <script src="js/common.js"></script>
+  <script>
+    const app = new Vue({
+      el: '#app',
+      data: {
+        urls: [
+          'upload/doing_neumorphic/02.jpg',
+          'upload/doing_neumorphic/03.jpg',
+          'upload/doing_neumorphic/04.jpg',
+          'upload/doing_neumorphic/05.jpg',
+          'upload/doing_neumorphic/06.jpg',
+          'upload/doing_neumorphic/07.jpg',
+          'upload/doing_neumorphic/08.jpg',
+          'upload/doing_neumorphic/09.jpg',
+          'upload/doing_neumorphic/10.jpg',
+          'upload/doing_neumorphic/11.jpg',
+          'upload/doing_neumorphic/12.jpg',
+        ]
+      }
+    })
+  </script>
+</body>
+
+</html>

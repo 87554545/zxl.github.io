@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+  <title>ZXL的个人网站</title>
+  <link rel="Shortcut Icon" href="img/favicon.ico" type="image/x-icon" />
+  <script src="js/jquery-3.3.1.slim.min.js"></script>
+  <script src="js/vue.min.js"></script>
+  <!-- element样式 -->
+  <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css" />
+  <!-- 组件公共样式 -->
+  <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/index.css" />
+</head>
+
+<body ondragstart="return false">
+  <iframe class="bigsurCnt" style="border: 1px solid rgba(0, 0, 0, 0.1)" width="1200" height="760"
+    src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FQ6BbEblpGpqyWaiUKwNoHG%2FMacOS-11%25E6%2596%25B0%25E6%258B%259F%25E7%2589%25A9%25E9%25A3%258E%25E4%25B8%25B4%25E6%2591%25B9-and-%25E6%258B%2593%25E5%25B1%2595%25E8%25AE%25BE%25E8%25AE%25A1%3Fnode-id%3D0%253A1&chrome=DOCUMENTATION"
+    allowfullscreen></iframe>
+  <iframe class="iconComponentCnt" style="border: 1px solid rgba(0, 0, 0, 0.1)" width="1200" height="760"
+    src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FZ67PXyMZGmZ0A5MCAbYOkf%2FICON%25E7%25BB%2584%25E4%25BB%25B6%25E5%25BA%259309-21%3Fnode-id%3D0%253A1&chrome=DOCUMENTATION"
+    allowfullscreen></iframe>
+  <div class="mask">
+    <span class="text1">如未响应，请点击窗口右下角的“+”按钮</span>
+  </div>
+  <!-- 回到顶部 -->
+  <div id="topBtnPC">
+    <topbtn-box></topbtn-box>
+  </div>
+  <!-- 顶部导航 -->
+  <div id="headerPC">
+    <header-box current="0"></header-box>
+  </div>
+  <!-- 顶部banner -->
+  <div class="banner-Box">
+    <div class="bannerCnt">
+      <div class="leftTextGroup">
+        <p class="hi">
+          <img src="img/hello-icon.svg" alt="" class="hello-icon" /> 嗨~
+        </p>
+        <p class="myName">我是<span class="color">张晓林</span></p>
+        <p class="introduction">
+          是一位UI设计师，现居山东青岛<img src="img/beer-icon.svg" alt="" class="beer-icon" />
+        </p>
+        <p class="introduction">
+          热衷参与产品从设计到交付的所有阶段，用设计帮助公司解决问题、实现增长。
+        </p>
+      </div>
+      <a href="about.html" class="rightIMG">
+        <img src="img/skill/Sketch.svg" alt="" class="Sketch" />
+        <img src="img/skill/Ps.svg" alt="" class="Ps" />
+        <img src="img/skill/Figma.svg" alt="" class="Figma" />
+        <img src="img/skill/Ae.svg" alt="" class="Ae" />
+        <img src="img/skill/Vue.svg" alt="" class="Vue" />
+        <img src="img/skill/HTML.svg" alt="" class="HTML" />
+        <img src="img/skill/CSS.svg" alt="" class="CSS" />
+        <img src="img/WWDC.png" alt="" class="WWDC" />
+      </a>
+      <div class="arrowBottomGroup">
+        <span class="text">查看作品集</span>
+        <img src="img/arrowBottom-icon.svg" alt="" class="arrowBottom-icon" />
+      </div>
+    </div>
+  </div>
+  <!-- 作品集内容区 -->
+  <div class="Portfolio-Box">
+    <!-- 单个作品集 -->
+    <div class="PortfolioRow white">
+      <div class="PortfolioRowCnt">
+        <div class="textGroup">
+          <h2 class="title">车眼通小程序</h2>
+          <p class="text">
+            车辆数据查询<br />帮助用户解决二手车交易盲区
+          </p>
+          <a href="work_cyt.html" target="_blank" class="detail">查看详情
+            <img class="arrowRight-icon" src="img/arrowRight-icon.svg" alt="" />
+          </a>
+        </div>
+        <a href="work_cyt.html" target="_blank" class="imgGroup">
+          <div class="PortfolioImg" style="background: url('upload/cyt1.png')"></div>
+        </a>
+      </div>
+    </div>
+    <!-- 单个作品集 -->
+    <div class="PortfolioRow gray">
+      <div class="PortfolioRowCnt flip">
+        <div class="textGroup">
+          <h2 class="title">花汝商城小程序</h2>
+          <p class="text">甄选好生活<br />专注微商用户群体</p>
+          <a href="work_huaru.html" target="_blank" class="detail">查看详情
+            <img class="arrowRight-icon" src="img/arrowRight-icon.svg" alt="" />
+          </a>
+        </div>
+        <a href="work_huaru.html" target="_blank" class="imgGroup">
+          <div class="PortfolioImg" style="background: url('upload/huaru.png')"></div>
+        </a>
+      </div>
+    </div>
+     <!-- 单个作品集 -->
+     <div class="PortfolioRow white">
+      <div class="PortfolioRowCnt">
+        <div class="textGroup">
+          <h2 class="title">其他UI作品</h2>
+          <p class="text">一些暂未上线的UI作品<br />其他平面设计作品</p>
+          <a href="https://www.figma.com/file/U7cHkEKHs3MNWtaSxEmF8V/%E5%B1%95%E7%A4%BA?node-id=0%3A1" target="_blank" class="detail">查看详情
+            <img class="arrowRight-icon" src="img/arrowRight-icon.svg" alt="" />
+          </a>
+        </div>
+        <a href="https://www.figma.com/file/U7cHkEKHs3MNWtaSxEmF8V/%E5%B1%95%E7%A4%BA?node-id=0%3A1" target="_blank" class="imgGroup">
+          <div class="PortfolioImg" style="background: url('upload/PicCover.png')"></div>
+        </a>
+      </div>
+    </div>
+    <!-- 单个作品集 -->
+     <!-- 
+    <div class="PortfolioRow white">
+      <div class="PortfolioRowCnt">
+        <div class="textGroup">
+          <h2 class="title">企业官网</h2>
+          <p class="text">企业官方网站<br />响应式设计</p>
+          <a href="https://www.98zhengxin.com/" target="_blank" class="detail">查看详情
+            <img class="arrowRight-icon" src="img/arrowRight-icon.svg" alt="" />
+          </a>
+        </div>
+        <a href="https://www.98zhengxin.com/" target="_blank" class="imgGroup">
+          <div class="PortfolioImg" style="background: url('upload/wangzhan.png')"></div>
+        </a>
+      </div>
+    </div>
+    -->
+    <!-- 单个作品集 -->
+    <div class="PortfolioRow gray">
+      <div class="PortfolioRowCnt flip">
+        <div class="textGroup">
+          <h2 class="title">100天UI设计挑战</h2>
+          <div class="progressBar">
+            <div class="lineBox">
+              <div class="lineCnt" style="width: 0%"></div>
+            </div>
+            <div class="numGroup">
+              <span class="num" data-num="25"></span>
+              <span class="symbol">%</span>
+            </div>
+          </div>
+          <p class="text">100套概念稿的设计</p>
+          <a href="https://www.figma.com/file/1niQUxEUNBQ8V2cm47ks0m/100%E5%A4%A9UI%E8%AE%BE%E8%AE%A1%E6%8C%91%E6%88%98?node-id=0%3A1" target="_blank" class="detail">查看详情
+            <img class="arrowRight-icon" src="img/arrowRight-icon.svg" alt="" />
+          </a>
+        </div>
+        <a href="https://www.figma.com/file/1niQUxEUNBQ8V2cm47ks0m/100%E5%A4%A9UI%E8%AE%BE%E8%AE%A1%E6%8C%91%E6%88%98?node-id=0%3A1" target="_blank" class="imgGroup">
+          <div class="PortfolioImg" style="background: url('upload/100dayCover.png')"></div>
+        </a>
+      </div>
+    </div>
+   
+  </div>
+  <!-- 正在做的 -->
+  <div class="doing-Box">
+    <div class="doingCnt">
+      <div class="doingTitle">
+        现在正在做的…
+        <img src="img/doing-icon.svg" alt="" class="doing-icon" />
+      </div>
+      <div class="doingGroup">
+        <!-- 单个内容 -->
+        <a href="doing_turnfigma.html" target="_blank" class="doingRow">
+          <div class="img-Box">
+            <img src="upload/turnFigma.png" alt="" class="doingCover" />
+          </div>
+          <div class="textGroup">
+            <h2 class="doingTitle">Sketch转Figma</h2>
+            <p class="description">组件库工作流最好的工具</p>
+          </div>
+        </a>
+        <!-- 单个内容 -->
+        <a href="doing_neumorphic.html" target="_blank" class="doingRow">
+          <div class="img-Box">
+            <img src="upload/jxq.png" alt="" class="doingCover" />
+          </div>
+          <div class="textGroup">
+            <h2 class="doingTitle">新拟态风格设计</h2>
+            <p class="description">Neumorphic</p>
+          </div>
+        </a>
+        <!-- 单个内容 -->
+        <a href="https://www.yuque.com/dylan-moran/ld4m38/bahil7" target="_blank" class="doingRow">
+          <div class="img-Box">
+            <img src="upload/dilan.png" alt="" class="doingCover" />
+          </div>
+          <div class="textGroup">
+            <h2 class="doingTitle">阅读：迪兰设计周报</h2>
+            <p class="description">第38期（2020.11.09）</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- 学习中 -->
+  <div class="learning-Box" id="learningVue">
+    <div class="learningCnt">
+      <div class="learningTitle">
+        学习中...
+        <img src="img/learning-icon.svg" alt="" class="learning-icon" />
+      </div>
+      <div class="learningGroup">
+        <!-- 单个内容 -->
+        <div :plain="true" @click="open3" class="learningRow" style="background-color: #41b883">
+          <div class="left">
+            <img src="img/vue-icon.svg" alt="" />
+          </div>
+          <div class="rightGroup">
+            <p style="color: #fff;">CINEMA 4D</p>
+            <span style="color: #fff;">进行中…</span>
+          </div>
+        </div>
+
+        <!-- 单个内容 -->
+        <div :plain="true" @click="open3" class="learningRow" >
+          <div class="left">
+            <img src="img/vue-icon.svg" alt="">
+          </div>
+          <div class="rightGroup">
+            <p >Vue开发</p>
+            <span >2021年3月</span>
+          </div>
+        </div>
+        <!-- 单个内容 -->
+        <div :plain="true" @click="open4" class="learningRow">
+          <div class="left">
+            <img src="img/uni-icon.svg" alt="">
+          </div>
+          <div class="rightGroup">
+            <p>uni-app多端开发</p>
+            <span>2021年8月</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 底部栏 -->
+  <div id="footerPC">
+    <footer-box></footer-box>
+  </div>
+  <!-- 数字滚动插件 -->
+  <script src="js/jquery.numscroll.js"></script>
+  <!-- element组件 -->
+  <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+  <!-- 组件js -->
+  <script src="js/common.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>

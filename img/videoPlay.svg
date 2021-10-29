@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>播放</title>
+    <desc>Created with Sketch.</desc>
+    <g id="首页" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="关于" transform="translate(-539.000000, -1751.000000)">
+            <g id="编组-4备份-2" transform="translate(360.000000, 1642.000000)">
+                <g id="编组-7">
+                    <g id="play" transform="translate(179.000000, 109.000000)">
+                        <g id="播放">
+                            <g>
+                                <circle id="椭圆形" fill="#EAEAE9" cx="25" cy="25" r="25"></circle>
+                                <path d="M31.7835879,22.9568597 C33.5726214,24.0852428 33.5716533,25.9153238 31.7835879,27.0430963 L21.9893317,33.2205507 C20.2002982,34.3489338 18.75,33.614206 18.75,31.5819374 L18.75,18.4180187 C18.75,16.3846544 20.2012662,15.6516327 21.9893317,16.7794052 L31.7835879,22.9568597 L31.7835879,22.9568597 Z" id="路径" fill="#1F1F1F" fill-rule="nonzero"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

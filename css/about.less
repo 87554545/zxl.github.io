@@ -1,0 +1,426 @@
+iframe {
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  z-index: 9;
+}
+
+.mask {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.726);
+  position: fixed;
+  z-index: 7;
+  display: none;
+  cursor: pointer;
+
+  .text1 {
+    position: absolute;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    left: 50%;
+    top: 20px;
+    font-weight: bold;
+    transform: translate(-50%, 0);
+  }
+}
+
+.bilibiliMask {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.726);
+  position: fixed;
+  z-index: 7;
+  display: none;
+  cursor: pointer;
+}
+
+// 顶部banner
+.banner-Box {
+  width: 100%;
+  height: 600px;
+  background-color: #101010;
+
+  .bannerCnt {
+    width: 1200px;
+    height: 600px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+
+    .leftImg {
+      width: 340px;
+      height: 496px;
+      margin-left: 67px;
+      margin-right: 100px;
+
+      .myPic {
+        width: 340px;
+        height: 496px;
+      }
+    }
+
+    .rightTextGroup {
+      display: flex;
+      flex-direction: column;
+      width: 674px;
+
+      .rightTextTitle {
+        font-size: 30px;
+        color: #F5F5F7;
+        font-weight: bold;
+        line-height: 39px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 23px;
+
+        .hello-icon {
+          width: 30px;
+          height: 30px;
+          margin-right: 5px;
+        }
+      }
+
+      .text1 {
+        font-size: 15px;
+        font-weight: 400;
+        color: #F5F5F7;
+        line-height: 26px;
+        letter-spacing: 0.5px;
+        margin-bottom: 50px;
+      }
+
+      .text2 {
+        font-size: 15px;
+        font-weight: 400;
+        color: #F5F5F7;
+        line-height: 26px;
+        letter-spacing: 0.5px;
+        margin-bottom: 50px;
+        font-family: 'Montserrat-Regular';
+      }
+
+      .downloadResume {
+        width: 156px;
+        height: 52px;
+        border: 1px solid #F5F5F7;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        font-weight: 400;
+        color: #F5F5F7;
+        line-height: 20px;
+        letter-spacing: 1px;
+        cursor: pointer;
+        transition: all 0.3s;
+      }
+
+      .downloadResume:hover {
+        background-color: #F5F5F7;
+        color: #101010;
+      }
+    }
+  }
+}
+
+// 介绍内容
+.introduction-Box {
+  width: 100%;
+  background-color: #fff;
+
+  .introductionCnt {
+    width: 1200px;
+    padding: 100px 0 140px 0;
+    box-sizing: border-box;
+    margin: 0 auto;
+
+    .introductionTitle {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 100px;
+
+      .leftTitle {
+        width: 407px;
+        font-size: 24px;
+        font-weight: 800;
+        color: #1D1D1F;
+        line-height: 24px;
+      }
+
+      .text {
+        width: 683px;
+        font-size: 16px;
+        font-weight: 500;
+        color: #3C3C3C;
+        line-height: 30px;
+      }
+    }
+
+    .introductionRow {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 100px;
+
+      .introductionRowLeft {
+        width: 407px;
+        height: 267px;
+        border-radius: 6px;
+        overflow: hidden;
+
+        img {
+          width: 407px;
+          height: 267px;
+        }
+      }
+
+      .videoBox {
+        width: 407px;
+        height: 267px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        cursor: pointer;
+
+        .videoPlay {
+          width: 45px;
+          height: 45px;
+          position: absolute;
+          z-index: 2;
+          opacity: 90%;
+          transition: all 0.3s;
+        }
+
+        .videoMask {
+          width: 407px;
+          height: 267px;
+          background-color: rgba(0, 0, 0, 0.329);
+          position: absolute;
+          z-index: 1;
+        }
+
+        .enactusV {
+          transition: all 0.3s;
+          background-color: rgba(0, 0, 0, 0.329);
+          z-index: 0;
+        }
+      }
+
+      .videoBox:hover {
+        .enactusV {
+          transform: scale(1.05);
+        }
+
+        .videoPlay {
+          opacity: 100%;
+        }
+      }
+
+
+      .introductionRowRight {
+        width: 683px;
+        display: flex;
+        flex-direction: column;
+
+        .introductionRowTitle {
+          font-size: 18px;
+          font-weight: bold;
+          color: #3C3C3C;
+          line-height: 26px;
+          margin-bottom: 15px;
+        }
+
+        .introductionRowText {
+          font-size: 16px;
+          font-weight: 400;
+          color: #6D7278;
+          line-height: 30px;
+          letter-spacing: 0.5px;
+        }
+
+        .what {
+          font-size: 14px;
+          color: #999;
+          line-height: 24px;
+          margin-top: 10px;
+        }
+      }
+    }
+
+    .introductionRow:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+// 正在做的
+.doing-Box {
+  width: 100%;
+  background-color: #fff;
+
+  .doingCnt {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 80px 0;
+    box-sizing: border-box;
+    border-top: 1px dashed #f0f0f0;
+
+    .doingTitle {
+      font-size: 32px;
+      font-weight: 800;
+      color: #1D1D1F;
+      line-height: 53px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 32px;
+
+      .doing-icon {
+        width: 26px;
+        margin-left: 10px;
+      }
+    }
+
+    .doingGroup {
+      width: 1200px;
+      display: flex;
+      flex-wrap: wrap;
+
+      .doingRow {
+        display: flex;
+        flex-direction: column;
+        margin-right: 22px;
+        margin-bottom: 60px;
+
+        .img-Box {
+          width: 385px;
+          height: 280px;
+          border-radius: 12px;
+          overflow: hidden;
+
+          .doingCover {
+            width: 385px;
+            height: 280px;
+            transition: all 0.3s;
+            -webkit-transition: all 0.3s;
+          }
+
+          .doingCover:hover {
+            transform: scale(1.05);
+            -webkit-transform: scale(1.05);
+          }
+        }
+
+        .textGroup {
+          display: flex;
+          flex-direction: column;
+          margin-top: 10px;
+
+          .doingTitle {
+            font-size: 16px;
+            color: #1D1D1F;
+            line-height: 25px;
+            margin-bottom: 3px;
+          }
+
+          .description {
+            font-size: 14px;
+            color: #1D1D1F;
+            line-height: 20px;
+          }
+        }
+      }
+
+      .doingRow:nth-child(3n) {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+// 学习中
+.learning-Box {
+  width: 100%;
+  background-color: #fff;
+
+  .learningCnt {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 80px 0 150px 0;
+    box-sizing: border-box;
+    border-top: 1px dashed #f0f0f0;
+
+    .learningTitle {
+      font-size: 32px;
+      font-weight: 800;
+      color: #1D1D1F;
+      line-height: 53px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 32px;
+
+      .learning-icon {
+        width: 38px;
+        margin-left: 10px;
+      }
+    }
+
+    .learningGroup {
+      width: 1200px;
+      display: flex;
+      justify-content: space-around;
+
+      .learningRow {
+        width: 370px;
+        height: 100px;
+        background: #F5F5F5;
+        border-radius: 18px;
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        box-sizing: border-box;
+        cursor: pointer;
+        transition: all 0.3s;
+
+        .left {
+          width: 60px;
+          height: 60px;
+          margin-right: 18px;
+
+          img {
+            width: 60px;
+            height: 60px;
+          }
+        }
+
+        .rightGroup {
+          display: flex;
+          flex-direction: column;
+
+          p {
+            font-size: 20px;
+            font-weight: 800;
+            color: #3C3C3C;
+            line-height: 28px;
+            margin-bottom: 4px;
+          }
+
+          span {
+            font-size: 14px;
+            font-weight: 500;
+            color: #3C3C3C;
+            line-height: 20px;
+          }
+        }
+      }
+
+      .learningRow:hover {
+        transform: translateY(-5px);
+      }
+    }
+  }
+}

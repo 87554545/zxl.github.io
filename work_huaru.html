@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+  <title>ZXL-花汝</title>
+  <link rel="Shortcut Icon" href="img/favicon.ico" type="image/x-icon" />
+  <script src="js/jquery-3.3.1.slim.min.js"></script>
+  <script src="js/vue.min.js"></script>
+  <!-- element样式 -->
+  <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+  <!-- 组件公共样式 -->
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/work_52cha.css">
+</head>
+
+<body ondragstart="return false">
+  <!-- 回到顶部 -->
+  <div id="topBtnPC">
+    <topbtn-box></topbtn-box>
+  </div>
+  <!-- 顶部导航 -->
+  <div id="headerPC">
+    <header-box></header-box>
+  </div>
+  <div class="main-Box" id="app">
+    <div class="mainCnt">
+      <div class="img01-Box">
+        <a href="https://www.52cha.com" target="_blank" class="btn">立即体验</a>
+        <img src="upload/work_52cha/01.jpg" alt="">
+      </div>
+      <img src="upload/work_huaru/01.png" alt="">
+      <img src="upload/work_huaru/02.png" alt="">
+      <img src="upload/work_huaru/03.png" alt="">
+      <img src="upload/work_huaru/04.png" alt="">
+      <img src="upload/work_huaru/05.png" alt="">
+      <img src="upload/work_huaru/06.png" alt="">
+      <img src="upload/work_huaru/07.png" alt="">
+      <img src="upload/work_huaru/08.png" alt="">
+      <img src="upload/work_huaru/09.png" alt="">
+    </div>
+  </div>
+  <!-- 底部栏 -->
+  <div id="footerPC">
+    <footer-box></footer-box>
+  </div>
+  <!-- element组件 -->
+  <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+  <!-- 组件js -->
+  <script src="js/common.js"></script>
+  <script>
+    // 背景变暗
+    $(function () {
+      $(window).scroll(function () {
+        var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        console.log("滚动高度2:" + scrollTop);
+        if (scrollTop >= 11843) {
+          $(".main-Box").css("backgroundColor", "#191A1F")
+        } else {
+          $(".main-Box").css("backgroundColor", "#fff")
+        }
+      })
+    })
+  </script>
+</body>
+
+</html>

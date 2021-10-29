@@ -1,0 +1,64 @@
+.main-Box {
+  width: 100%;
+  background-color: #fff;
+  transition: all 0.3s;
+}
+.main-Box .mainCnt {
+  width: 1200px;
+  margin: 0 auto;
+}
+.main-Box .mainCnt img {
+  width: 1200px;
+}
+.main-Box .mainCnt .Video52cha {
+  width: 1200px;
+  height: auto;
+}
+.main-Box .mainCnt .img01-Box {
+  width: 1200px;
+  position: relative;
+}
+.main-Box .mainCnt .img01-Box .btn {
+  width: 144px;
+  height: 52px;
+  border-radius: 26px;
+  background-color: #518FF5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: #fff;
+  position: absolute;
+  bottom: 98px;
+  left: 113px;
+  transition: all 0.3s;
+}
+.main-Box .mainCnt .img01-Box .btn:hover {
+  transform: scale(1.03);
+  background-color: #3c82f1;
+}
+.main-Box .mainCnt .img13-Box {
+  width: 1200px;
+  position: relative;
+}
+.main-Box .mainCnt .img13-Box .btn {
+  width: 320px;
+  height: 80px;
+  border-radius: 40px;
+  background-color: #518FF5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  position: absolute;
+  margin: 0 auto;
+  bottom: 140px;
+  left: 38%;
+  transition: all 0.3s;
+}
+.main-Box .mainCnt .img13-Box .btn:hover {
+  transform: scale(1.03);
+  background-color: #3c82f1;
+}

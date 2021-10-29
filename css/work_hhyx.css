@@ -1,0 +1,12 @@
+.main-Box {
+  width: 100%;
+  background-color: #fff;
+  transition: all 0.3s;
+}
+.main-Box .mainCnt {
+  width: 1200px;
+  margin: 0 auto;
+}
+.main-Box .mainCnt img {
+  width: 1200px;
+}

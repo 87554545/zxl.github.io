@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+  <title>ZXL的个人网站</title>
+  <link rel="Shortcut Icon" href="img/favicon.ico" type="image/x-icon" />
+  <script src="js/jquery-3.3.1.slim.min.js"></script>
+  <script src="js/vue.min.js"></script>
+  <!-- element样式 -->
+  <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+  <!-- 组件公共样式 -->
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/about.css">
+</head>
+
+<body ondragstart="return false">
+  <!-- 回到顶部 -->
+  <div id="topBtnPC">
+    <topbtn-box></topbtn-box>
+  </div>
+  <iframe class="enactusVideo"
+    src="//player.bilibili.com/player.html?aid=23881443&bvid=BV1Tp411R7XK&cid=39948686&page=1" scrolling="no"
+    frameborder="no" framespacing="0" allowfullscreen="true" width="1200" height="760">
+  </iframe>
+  <iframe class="bigsurCnt" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="1200" height="760"
+    src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FQ6BbEblpGpqyWaiUKwNoHG%2FMacOS-11%25E6%2596%25B0%25E6%258B%259F%25E7%2589%25A9%25E9%25A3%258E%25E4%25B8%25B4%25E6%2591%25B9-and-%25E6%258B%2593%25E5%25B1%2595%25E8%25AE%25BE%25E8%25AE%25A1%3Fnode-id%3D0%253A1&chrome=DOCUMENTATION"
+    allowfullscreen></iframe>
+  <iframe class="iconComponentCnt" style="border: 1px solid rgba(0, 0, 0, 0.1);" width="1200" height="760"
+    src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FZ67PXyMZGmZ0A5MCAbYOkf%2FICON%25E7%25BB%2584%25E4%25BB%25B6%25E5%25BA%259309-21%3Fnode-id%3D0%253A1&chrome=DOCUMENTATION"
+    allowfullscreen></iframe>
+  <div class="mask">
+    <span class="text1">如未响应，请点击窗口右下角的“+”按钮</span>
+  </div>
+  <div class="bilibiliMask"></div>
+  <!-- 顶部导航 -->
+  <div id="headerPC">
+    <header-box current=1></header-box>
+  </div>
+  <!-- 顶部banner -->
+  <div class="banner-Box">
+    <div class="bannerCnt">
+      <!-- <div class="leftImg">
+        <img src="img/myPic.png" alt="" class="myPic">
+      </div> -->
+      <div class="rightTextGroup">
+        <div class="rightTextTitle"><img class="hello-icon" src="img/hello-icon.svg" alt="">再次问好！</div>
+        <p class="text1">嗨~我是张晓林，UI
+          设计师一名，坐标青岛。<br />已在UI设计这行耕耘近3年，主导和参与了6款产品的设计，。<br />虽然做设计不能改变世界，虽然手机是冰冷的，但依然希望可以通过设计这项技能，给公司带去商业上和用户上的增长，同时给用户做出一些带有「温度」的产品。
+        </p>
+        <p class="text2">如果您想与我取得联系，以下为联系方式：<br />648735466@qq.com&nbsp;&nbsp;|&nbsp;&nbsp; 18539590922</p>
+        <a href="upload/myResume.pdf" download="张晓林的简历" class="downloadResume">下载我的简历</a>
+      </div>
+    </div>
+  </div>
+  <!-- 介绍内容 -->
+  <div class="introduction-Box">
+    <div class="introductionCnt">
+      <div class="introductionTitle">
+        <h2 class="leftTitle">了解有关我的更多信息</h2>
+
+
+        <p class="text">我目标是成为<strong>全栈UI设计师</strong>，完成项目的原型输出、UI设计、动效设计、前端开发等环节，我始终认为还原自己的设计稿并上线是很酷且效率很高的一件事。</p>
+      </div>
+      <!-- 单个介绍 -->
+      <div class="introductionRow">
+        <div class="introductionRowLeft">
+          <img src="upload/aboutUICover.png" alt="">
+        </div>
+        <div class="introductionRowRight">
+          <div class="introductionRowTitle">作为UI设计师，我参与的部分项目</div>
+          <p class="introductionRowText">
+            工e快贷APP的UI设计和开发驱动<br />
+            花汝小程序的产品构思及UI设计<br />
+            海龟系统的UI设计<br />
+            企业官网的UI设计与前端开发<br />
+            车眼通小程序的UI设计<br />
+            …
+          </p>
+        </div>
+      </div>
+      <!-- 单个介绍 -->
+      <div class="introductionRow">
+        <div class="introductionRowLeft">
+          <img src="upload/aboutPhotoCover.png" alt="">
+        </div>
+        <div class="introductionRowRight">
+          <div class="introductionRowTitle">同时还负责了公司其他的工作</div>
+          <p class="introductionRowText">
+            后期负责新项目的产品构思及PRD文档编写，有较好的产品思维<br />
+            2020年初开通抖音企业号，负责公司的视频剪辑工作<br />
+            日常团建负责公司视频拍摄和录制工作，有一定的摄影基础<br />
+            …
+          </p>
+        </div>
+      </div>
+      <!-- 单个介绍 -->
+     
+  </div>
+  <!-- 正在做的 -->
+  <div class="doing-Box">
+      <div class="doingCnt">
+        <div class="doingTitle">
+          现在正在做的…
+          <img src="img/doing-icon.svg" alt="" class="doing-icon" />
+        </div>
+        <div class="doingGroup">
+          <!-- 单个内容 -->
+          <a href="doing_turnfigma.html" target="_blank" class="doingRow">
+            <div class="img-Box">
+              <img src="upload/turnFigma.png" alt="" class="doingCover" />
+            </div>
+            <div class="textGroup">
+              <h2 class="doingTitle">Sketch转Figma</h2>
+              <p class="description">组件库工作流最好的工具</p>
+            </div>
+          </a>
+        <!-- 单个内容 -->
+        <a href="doing_neumorphic.html" target="_blank" class="doingRow">
+          <div class="img-Box">
+            <img src="upload/jxq.png" alt="" class="doingCover" />
+          </div>
+          <div class="textGroup">
+            <h2 class="doingTitle">新拟态风格设计</h2>
+            <p class="description">Neumorphic</p>
+          </div>
+        </a>
+          <!-- 单个内容 -->
+          <a href="https://www.yuque.com/dylan-moran/ld4m38/bahil7" target="_blank" class="doingRow">
+            <div class="img-Box">
+              <img src="upload/dilan.png" alt="" class="doingCover" />
+            </div>
+            <div class="textGroup">
+              <h2 class="doingTitle">阅读：迪兰设计周报</h2>
+              <p class="description">第38期（2020.11.09）</p>
+            </div>
+          </a>
+        </div>
+      </div>
+  </div>
+  <!-- 学习中 -->
+  <div class="learning-Box" id="learningVue">
+    <div class="learningCnt">
+      <div class="learningTitle">学习中... <img src="img/learning-icon.svg" alt="" class="learning-icon"></div>
+      <div class="learningGroup">
+        <!-- 单个内容 -->
+        <div :plain="true" @click="open4" class="learningRow" style="background-color: #41B883;">
+          <div class="left">
+            <img src="img/c4d-icon.svg" alt="">
+          </div>
+          <div class="rightGroup">
+            <p style="color: #fff;">CINEMA 4D</p>
+            <span style="color: #fff;">进行中…</span>
+          </div>
+        </div>
+
+        <!-- 单个内容 -->
+        <div :plain="true" @click="open3" class="learningRow" >
+          <div class="left">
+            <img src="img/vue-icon.svg" alt="">
+          </div>
+          <div class="rightGroup">
+            <p >Vue开发</p>
+            <span >2021年3月</span>
+          </div>
+        </div>
+        <!-- 单个内容 -->
+        <div :plain="true" @click="open4" class="learningRow">
+          <div class="left">
+            <img src="img/uni-icon.svg" alt="">
+          </div>
+          <div class="rightGroup">
+            <p>uni-app多端开发</p>
+            <span>2021年8月</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 底部栏 -->
+  <div id="footerPC">
+    <footer-box></footer-box>
+  </div>
+  <!-- 数字滚动插件 -->
+  <script src="js/jquery.numscroll.js"></script>
+  <!-- element组件 -->
+  <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+  <!-- 组件js -->
+  <script src="js/common.js"></script>
+  <script src="js/index.js"></script>
+  <script>
+    // biliVideo
+    $('.videoBox').click(function () {
+      $('.bilibiliMask').fadeIn()
+      $('.enactusVideo').fadeIn()
+      $('html,body').addClass('ovfHiden'); //使网页不可滚动
+    })
+    $('.bilibiliMask').click(function () {
+      $('.bilibiliMask').fadeOut()
+      $('.enactusVideo').fadeOut()
+      $('html,body').removeClass('ovfHiden'); //使网页恢复可滚
+    })
+  </script>
+</body>
+
+</html>
